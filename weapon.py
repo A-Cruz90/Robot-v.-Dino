@@ -3,12 +3,8 @@ import random
 
 
 class Weapon():
-    def __init__(self):
+    def __init__(self, name, attack_power):
         self.name = ""
-        self.attack_power = ""
-        self.active_weapon = []
-        
-    def set_weapon(self):
-        self.active_weapon = random.choice(list_of_weapons(range(0,2)))
-
-        
+        self.attack_power = 17
+    
+    
