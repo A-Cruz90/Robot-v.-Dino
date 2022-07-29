@@ -1,23 +1,23 @@
-list_of_dinousaurs = ["T-rex", "Stego", " Ankylosaurus"]
 import random
 from robot import Robot
 
 
 class Dinosaur():
     def __init__(self):
+        self.list_of_dinousaurs = ["T-rex", "Stego", " Ankylosaurus"]
         self.name = ""
         self.health = 100 
         self.attack_power = 13
-        self.type_of_dino = random.choice(list_of_dinousaurs)
+        self.set_type()
 
     def set_attack(self):
         self.attack_power = "Bite"
 
     def set_type(self):
-        self.type_of_dino = random.choice(list_of_dinousaurs)
+        self.name = random.choice(self.list_of_dinousaurs)
 
     def attack(self, robot):
-        self.attack_power = ((robot.health) - (Dinosaur.attack_power))
+        robot.health -= self.attack_power
+        print(f'{self.name} attacked {robot.name} for {self.attack_power} leaving {robot.name} with {robot.health} health remaining ')
 
-    def set_name(self, name):
-        self.name = name
+   
