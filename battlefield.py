@@ -1,12 +1,13 @@
 from dinosaur import Dinosaur
 from robot import Robot
+from weapon import Weapon
 
 
 class Battlefield():
     def __init__(self):
         self.name = ""
-        self.opponent_one = Robot("")
-        self.opponent_two = Dinosaur("", "")
+        self.opponent_one = Robot()
+        self.opponent_two = Dinosaur()
 
     def set_name(self,name):
         self.name = name
