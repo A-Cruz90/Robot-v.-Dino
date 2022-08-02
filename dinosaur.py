@@ -4,10 +4,10 @@ from robot import Robot
 
 class Dinosaur():
     def __init__(self):
-        self.list_of_dinousaurs = ["T-rex", "Stego", " Ankylosaurus"]
+        self.list_of_dinousaurs = ["Johny the T-rex", "Timmi the Stego", "Rocky the Ankylosaurus"]
         self.name = ""
         self.health = 100 
-        self.attack_power = 13
+        self.attack_power = 9
         self.set_type()
 
     def set_attack(self):

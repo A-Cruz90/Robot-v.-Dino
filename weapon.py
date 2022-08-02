@@ -6,7 +6,7 @@ class Weapon():
     def __init__(self):
         self.list_of_weapons = ["Heat Gun", "Laser", "Ice Ray"]
         self.name = ""
-        self.attack_power = 17
+        self.attack_power = 7
         self.name_weapon()
     
     def name_weapon(self):
